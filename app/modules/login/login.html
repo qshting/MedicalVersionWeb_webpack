@@ -1,0 +1,32 @@
+﻿c<div ng-controller="loginController">
+    <div class="downAPPlogin">
+        <div class="v_login">
+            <h6>版本控制后台</h6>
+            <p class="error">
+                <span></span>
+            </p>
+            <form class="form-horizontal" novalidate>
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <input ng-model="account" type="text" class="form-control" placeholder="请输入账号" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <input ng-model="password" type="password" class="form-control" placeholder="请输入密码" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <button class="btn btn-primary form-control" ng-click="login()"> 登 录 </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--toast提示-->
+    <div class="toast" ng-hide="hideToastView">
+        {{toastViewText}}
+    </div>
+</div>

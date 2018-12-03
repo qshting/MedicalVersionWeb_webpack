@@ -1,0 +1,13 @@
+﻿<div ng-controller="downAPPController">
+    <div class="downAPP">
+        <h4>如果点击无法安装，请在Safari浏览器中打开</h4>
+        <a ng-click="clickToStep()">点击安装</a>
+        <p>或者扫描下面的二维码安装</p>
+        <p style="padding: 10px 0px;">
+            <qrcode data="{{qrurl}}" size="200"></qrcode>
+        </p>
+        <p>软件名称：{{softName}} 软件包名：{{packageName}} 软件版本号：{{versionNum}}<br>
+            软件版本内容：{{upgradeContent}}</p>
+
+    </div>
+</div>
